@@ -1,7 +1,94 @@
 import React, { Component } from 'react';
-
+import ProductContent from './product-content.js';
 class Content extends Component {
+
     render() {
+        var products = [
+            {
+                id: "1",
+                name: "Đôi giày xin sò ",
+                image: "images/cont1.jpg",
+                price: 350
+            },
+            {
+                id: "2",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont2.jpg",
+                price: 350
+            },
+            {
+                id: "3",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont3.jpg",
+                price: 350
+            },
+            {
+                id: "4",
+                name: "Đôi giày xin sò",
+                image: "images/cont3.jpg",
+                price: 350
+            },
+            {
+                id: "5",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "6",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "7",
+                name: "Đôi giày xin sò ",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "8",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "9",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "10",
+                name: "Đôi giày xin sò hình cái túiasdasdasdasdasd",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "11",
+                name: "Đôi giày xin sò ",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "12",
+                name: "Đôi giày xin sò i",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+            {
+                id: "13",
+                name: "Đôi giày xin sò hình cái túi",
+                image: "images/cont4.jpg",
+                price: 350
+            },
+        ];
+
+        let elementProduct = products.map((product, item) => {
+            return (
+                <ProductContent name={product.name} price={product.price} image={product.image} id={product.id} key={item} />
+            );
+        });
         return (
             <div>
                 <div className="container-fluid">
@@ -54,248 +141,8 @@ class Content extends Component {
                                 <h2>Một số sản phẩm nổi bật</h2>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".class2" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont1.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Đôi giày xin sò hình cái túi</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Mua luôn</a></p>
-                                </div>
-                            </div>
-                            {/*--start-model-box--*/}
-                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                            <div className="modal fade bs-example-modal-md light-box class2" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-md">
-                                    <div className="modal-content light-box-info">
-                                        <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                        <h3>Bạn muốn hiện gì ở đây</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                        Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                        Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*--start-model-box--*/}
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".class3" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                            </div>
-                            {/*--start-model-box--*/}
-                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                            <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-md">
-                                    <div className="modal-content light-box-info">
-                                        <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                        <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                        Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                        Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*--start-model-box--*/}
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont3.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
-                            
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
-                            <div className="col-md-2">
-                                <div className="grid">
-                                    <div className="portfolio app mix_all" data-cat="app" style={{ display: 'inline-block', opacity: 1 }}>
-                                        <div className="portfolio-wrapper">
-                                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" className="b-link-stripe b-animate-go  thickbox">
-                                                <img src="images/cont2.jpg" /><div className="b-wrapper"><h2 className="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt="" /></h2>
-                                                </div></a>
-                                        </div>
-                                    </div>
-                                    <p className="text-center">Big block Lether Bag</p>
-                                    <h2 className="text-center">$350.00</h2>
-                                    <p className="text-center"><a href="details.html">Buy</a></p>
-                                </div>
-                                {/*--start-model-box--*/}
-                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
-                                <div className="modal fade bs-example-modal-md light-box class3" tabIndex={-1} role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog modal-md">
-                                        <div className="modal-content light-box-info">
-                                            <button type="button" className="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
-                                            <h3>Bạn muốn hiện gì ở đây lần 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere diam et est hendrerit, eget sodales lectus tincidunt.
-                                            Etiam suscipit orci sapien, at molestie lorem imperdiet vitae. Fusce nunc eros, congue non hendrerit sed, lobortis scelerisque magna.
-                                            Ut in nunc sem. Integer bibendum enim et erat molestie, sed interdum nisl ultricies. In hac habitasse platea dictumst.
-                      Nullam sem diam, tincidunt dapibus tellus pulvinar, pulvinar tempus dui. Integer eu faucibus arcu. Duis adipiscing commodo ipsum dapibus elementum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/*--start-model-box--*/}
-                            </div>
+                        <div className="row is-flex">
+                            { elementProduct }
                         </div>
                         <div className="clearfix" />
                     </div>
