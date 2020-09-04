@@ -19,7 +19,7 @@ class Content extends Component {
             {
                 id: "3",
                 name: "Đôi giày xin sò hình cái túi",
-                image: "images/cont3.jpg",
+                image: "images/F_ironman_hulkbuster_aou.png",
                 price: 350
             },
             {
