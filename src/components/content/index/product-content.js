@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 class ProductContent extends Component {
 
     render() {
@@ -14,7 +15,9 @@ class ProductContent extends Component {
                     </div>
                     <p className="text-center">{this.props.name}</p>
                     <h2 className="text-center">${this.props.price}</h2>
-                    <p className="text-center"><a href="details.html">Buy</a></p>
+                    <p className="text-center">
+                        <Link to="/detail">Buy</Link>
+                    </p>
                 </div>
                 {/*--start-model-box--*/}
                 <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>

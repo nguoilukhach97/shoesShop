@@ -46,4 +46,25 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media(min-width: 768px){
+  ul.nav.navbar-nav {
+    font-size: 16px;
+  }
+}
+@media(min-width: 1200px){
+  ul.nav.navbar-nav {
+    font-size: 20px;
+  }
+}
 
+button.btn.btn-default.dropdown-toggle {
+  padding: 0px;
+  line-height: 100%;
+}
+
+a.active {
+  border-color: green;
+  color: red;
+  border: 1px solid white;
+  border-radius: 22px;
+}

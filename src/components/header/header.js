@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link,NavLink } from 'react-router-dom';
 class Header extends Component {
     render() {
         return (
@@ -6,7 +7,9 @@ class Header extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+                            <div className="logo">
+                                <Link to="/"><img src="images/logo.png" alt="" /></Link>
+                            </div>
                         </div>
                         <div className="col-md-9">
                             <nav className="navbar navbar-default" role="navigation">
@@ -36,9 +39,9 @@ class Header extends Component {
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="about.html">Trang 1</a></li>
-                                            <li><a href="blog.html">Trang 2</a></li>
-                                            <li><a href="contact.html">Trang 3</a></li>
+                                            <li><NavLink to="/about">About</NavLink></li>
+                                            <li><NavLink to="/blog">Blog</NavLink></li>
+                                            <li><NavLink to="/contact">Contact</NavLink></li>
                                         </ul>
                                     </div>{/* /.navbar-collapse */}
                                 </div>{/* /.container-fluid */}

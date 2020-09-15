@@ -1,20 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from './components/header/header.js';
-import Content from './components/content/index/content.js';
 import Footer from './components/footer/footer.js';
-import About from './components/content/about/about.js';
-import Blog from './components/content/blog/blog.js';
-import Contact from './components/content/contact/contact.js';
-import Detail from './components/content/detail/detail.js';
 import './App.css';
+import Redirect from './router/redirect.js';
 
 function App() {
     return (
-        <div className="App">
-            <Header />
-            <Content />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App">
+                <Header />
+                <Redirect />
+                {/* <Content /> */}
+                <Footer />
+            </div>
+        </Router>
+        
     );
 }
 
